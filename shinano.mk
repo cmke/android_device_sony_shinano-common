@@ -119,11 +119,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-# Qualcomm Random Number Generator
-PRODUCT_PACKAGES += \
-    qrngd \
-    qrngp
-
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
@@ -131,9 +126,6 @@ PRODUCT_PACKAGES += \
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
-
-# We have enough storage space to hold precise GC data
-PRODUCT_TAGS += dalvik.gc.type-precise
 
 # Audio offload
 PRODUCT_PROPERTY_OVERRIDES += \
